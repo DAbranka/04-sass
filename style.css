@@ -1,5 +1,7 @@
-.sucess, .error, .warning {
-  border: 1px solid #8C8C8C;
+.sucess,
+.error,
+.warning {
+  border: 1px solid #8c8c8c;
   padding: 16px;
   color: #fff;
 }

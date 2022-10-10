@@ -1,0 +1,21 @@
+$body-clr: #6b717f;
+$article-code-clr: #8c8c8c;
+$headers-clr: #bf4080;
+$sucess-error-warning-clr: #fff;
+$success-bg-clr: green;
+$error-bg-clr: red;
+$warning-bg-clr: orange;
+
+$base-padding: 10px;
+
+@mixin box-shadow($box-shadow-clr: grey) {
+  -webkit-box-shadow: 10px 10px 15px -4px #6b717f;
+  -moz-box-shadow: 10px 10px 15px -4px #6b717f;
+  box-shadow: 10px 10px 15px -4px #6b717f;
+}
+
+%messages {
+  border: 1px solid #8c8c8c;
+  padding: 16px;
+  color: $sucess-error-warning-clr;
+}

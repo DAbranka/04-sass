@@ -1,31 +1,14 @@
+@import "libs/variables.scss";
 
-$body-clr: #6b717f;
-$article-code-clr: #8C8C8C;
-$headers-clr: #BF4080;
-$sucess-error-warning-clr: #fff;
-$success-bg-clr: green;
-$error-bg-clr: red;
-$warning-bg-clr: orange;
-
-$base-padding: 10px;
-
-
-%messages{
-    border: 1px solid #8C8C8C;
-    padding: 16px;
-    color: $sucess-error-warning-clr;
+main {
+  padding-top: 0;
+  padding-bottom: $base-padding - 10;
 }
 
-main{
-    padding-top: 0;
-    padding-bottom: $base-padding - 10;
-}
-
-footer{
-
-    h3{
-        padding: $base-padding * 2;
-    }
+footer {
+  h3 {
+    padding: $base-padding * 2;
+  }
 }
 
 article {
@@ -36,9 +19,10 @@ article {
     flex-grow: 1;
     flex-basis: 45%;
     border: 1px #8c8c8c solid;
-    -webkit-box-shadow: 10px 10px 15px -4px #6b717f;
-    -moz-box-shadow: 10px 10px 15px -4px #6b717f;
-    box-shadow: 10px 10px 15px -4px #6b717f;
+    // -webkit-box-shadow: 10px 10px 15px -4px #6b717f;
+    // -moz-box-shadow: 10px 10px 15px -4px #6b717f;
+    // box-shadow: 10px 10px 15px -4px #6b717f;
+    @include box-shadow;
     padding: 16px;
     margin: 16px;
     clear: both;
@@ -77,11 +61,13 @@ article {
   }
 }
 
-.sucess,.error,.warning{
-    @extend %messages;
+.sucess,
+.error,
+.warning {
+  @extend %messages;
 }
 
-.error:hover{
-    background-color: greenyellow;
-    color: black;
+.error:hover {
+  background-color: greenyellow;
+  color: black;
 }
