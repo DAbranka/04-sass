@@ -4,6 +4,15 @@
   color: #fff;
 }
 
+main {
+  padding-top: 0;
+  padding-bottom: 0px;
+}
+
+footer h3 {
+  padding: 20px;
+}
+
 article {
   display: flex;
   flex-wrap: wrap;

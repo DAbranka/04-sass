@@ -7,12 +7,26 @@ $success-bg-clr: green;
 $error-bg-clr: red;
 $warning-bg-clr: orange;
 
+$base-padding: 10px;
+
+
 %messages{
     border: 1px solid #8C8C8C;
     padding: 16px;
     color: $sucess-error-warning-clr;
 }
 
+main{
+    padding-top: 0;
+    padding-bottom: $base-padding - 10;
+}
+
+footer{
+
+    h3{
+        padding: $base-padding * 2;
+    }
+}
 
 article {
   display: flex;
